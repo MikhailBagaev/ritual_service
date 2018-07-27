@@ -1,0 +1,46 @@
+.footer {
+    background-color: $grey;
+    background-image: url('../img/overlay.png');
+    padding-top: 30px;
+    margin-bottom: 10px;
+    .row {
+        margin: 0;
+    }
+    .copyright {
+        text-transform: uppercase;
+        font-size: 1.285em;
+        margin-top: 15px;
+    }
+    .footer-menu-block {
+        &:nth-child(1) {
+            margin-bottom: 40px;
+        }
+        &:nth-child(2) {
+            margin-bottom: 40px;
+        }
+        li {
+            margin: 0;
+            margin-bottom: 1em;
+            padding-left: 1.5em;
+            position: relative;
+            &:after {
+                content: '';
+                height: .4em;
+                width: .4em;
+                background: #D2153A;
+                display: block;
+                position: absolute;
+                transform: rotate(45deg);
+                top: .25em;
+                left: 0;
+            }
+            a {
+                color: $black;
+                text-transform: uppercase;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

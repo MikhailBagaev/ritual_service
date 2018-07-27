@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritual Service</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="bootstrap_js/bootstrap.min.js"></script>
+    
+    
+  </head>
+  <body>
+    <section class="header">
+        <div class="container">
+            <div class="row">
+                <nav class="site-nav main-menu">
+                    <span class="navbar-toggle burger-menu burger-menu--main" data-toggle="collapse" data-target="#responsive-main-menu">
+                        &#9776;
+                    </span>
+                    <ul class="nav navbar-nav navbar-left collapse navbar-collapse" id="responsive-main-menu">
+                        <li>
+                            <a href="#" class="active">главная</a>
+                        </li>
+                        <li>
+                            <a href="#!">о нас</a>
+                        </li>
+                        <li>
+                            <a href="#!">прайс</a>
+                        </li>
+                        <li>
+                            <a href="#!">установка</a>
+                        </li>
+                        <li>
+                            <a href="#!">гарантии</a>
+                        </li>
+                        <li>
+                            <a href="#!">отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#!">контакты</a>
+                        </li>
+                        <li class="entry">
+                            <a href="#" class="red">вход</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-4 col-md-push-4 col-xs-12 logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Angel" class="logo-main">
+                    </a>
+                </div>
+                <div class="col-md-4 col-md-pull-4 col-xs-12 contacts">
+                    <ul>
+                        <li>
+                            <span class="glyphicon glyphicon-envelope red"></span>
+                            <a href="mailto:info@ogradki.ru">info@ogradki.ru</a>
+                        </li>
+                        <li>
+                            <span class="glyphicon glyphicon-phone red"></span>
+                            <a href="tel:+74957995006">+ 7 495 799 50 06</a>
+                        </li>
+                        <li class="clearfix"></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xs-12 form-group">
+                    <div class="wrapper">
+                        <div class="input-group search">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn--red btn-search" type="button">
+                                    <span class="glyphicon glyphicon-search white"></span>
+                                </button>
+                            </span>
+                        </div>
+    
+                        <div class="input-group shopping-cart">
+                            <div class="form-control"></div>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn--red btn-shopping-cart" type="button">
+                                    <span class="glyphicon glyphicon-shopping-cart white"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <nav class="site-nav products">
+                        <span class="navbar-toggle burger-menu burger-menu--products" data-toggle="collapse" data-target="#responsive-products-menu">
+                            &#9776;
+                        </span>
+                        <ul class="nav navbar-nav navbar-left collapse navbar-collapse" id="responsive-products-menu">
+                            <li>
+                                <a href="#!">цоколя</a>
+                            </li>
+                            <li>
+                                <a href="#!">плитка</a>
+                            </li>
+                            <li class="drop">
+                                <a href="#!">памятники
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#" role="menuitem" tabindex="-1">вертикальные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" role="menuitem" tabindex="-1">горизонтальные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" role="menuitem" tabindex="-1">с крестом</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" role="menuitem" tabindex="-1">двойные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" role="menuitem" tabindex="-1">элитные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!">оградки</a>
+                            </li>
+                            <li>
+                                <a href="#!">столики</a>
+                            </li>
+                            <li>
+                                <a href="#!">лавочки</a>
+                            </li>
+                            <li>
+                                <a href="#!">вазы</a>
+                            </li>
+                            <li>
+                                <a href="#!">цветники</a>
+                            </li>
+                        </ul>
+    
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="hr-red"></div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 side-bar">
+                    <div class="basket side-bar-block">
+                        <h3>корзина
+                            <span class="glyphicon glyphicon-chevron-down" id="chevron-down-basket"></span>
+                        </h3>
+                        <div class="block-hidden basket-block-hidden">
+                            <p class="text-center">В корзине:
+                                <span class="items-number">2 товар(ов)</span>
+                            </p>
+                            <p class="text-center">На сумму:
+                                <span class="sum">42 000 руб</span>
+                            </p>
+                            <button class="order">
+                                <span class="glyphicon glyphicon-list-alt"></span> Оформить заказ</button>
+                        </div>
+                    </div>
+                    <!--basket-->
+                    <div class="news side-bar-block">
+                        <h3>новости</h3>
+                        <div class="news-block">
+                            <p class="date">01.07.2018</p>
+                            <h4>скоро открытие</h4>
+                            <p>Открытие нашего сайта состоится в ближайшее время...</p>
+                        </div>
+                        <div class="news-block">
+                            <p class="date">08.07.2018</p>
+                            <h4>акционное предложение</h4>
+                            <p>Первым десяти заказавшим — скидка на установку 30%...</p>
+                        </div>
+                    </div>
+                    <!--news-->
+                    <div class="autorization side-bar-block">
+                        <h3>авторизация
+                            <span class="glyphicon glyphicon-chevron-down" id="chevron-down-autorization"></span>
+                        </h3>
+                        <div class="block-hidden autorization-block-hidden">
+                            <form>
+                                <div class="input-group">
+                                    <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                    <input type="text" class="form-control" placeholder="Логин">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                                    <input type="text" class="form-control" placeholder="Пароль">
+                                </div>
+                                <p class="registration text-center">
+                                    <a href="#" class="bold black">Забыли свой пароль?</a>
+                                    <br>
+                                    <a href="#" class="black">У вас нет аккаунта?</a>
+                                    <a href="#" class="bold black">Регистрация</a>
+                                </p>
+    
+                                <button type="submit" class="btn btn-default text-center">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                    <span>Войти</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--autorization-->
+                    <div class="statistics side-bar-block">
+                        <h3>статистика</h3>
+                        <p class="text-center">В магазине:
+                            <span class="visitors-number bold">10</span> посетитель(ей)</p>
+                        <p class="text-center">Просмотров за сегодня:
+                            <span class="views-today bold">200</span>
+                        </p>
+                        <p class="text-center">Посетителей за сегодня:
+                            <span class="visitors-today bold">200</span>
+                        </p>
+                        <p class="text-center">Всего просмотров:
+                            <span class="views-all bold">200</span>
+                        </p>
+                        <p class="text-center">Всего посетителей:
+                            <span class="visitors-all bold">200</span>
+                        </p>
+                    </div>
+                    <!--statistics-->
+                </div>
+                <div class="col-md-9 main-block">
+                    <div class="introduction">
+                        <h2>Добро пожаловать на сайт гранитной мастерской</h2>
+                        <p>
+                            Наша гранитная мастерская – одна из крупнейших и динамично развивающихся компаний на российском ритуальном рынке. Наличие
+                            собственного производства позволяет избежать наценок, а соответственно мы предлагаем цены в разы
+                            ниже, чем компании-перекупщики. Наш завод памятников предлагает и другие товары для оформления могильного
+                            участка — ограды, столики, лавочки, вазы, цветники. Мы имеем огромный опыт в изготовлении мемориалов
+                            любой сложности, а наша продукция пользуется стабильным спросом.
+                        </p>
+                        <p>
+                            Основная цель нашей гранитной мастерской – сделать качественное и красивое надгробие на могилу, воплотив в реальность все
+                            ваши пожелания и задумки. С нами работают только опытные профессионалы, ответственно и с пониманием
+                            подходящие к своей работе. Мы добросовестно выполняем свои обязательства, получая взамен много положительных
+                            отзывов.
+                        </p>
+                        <p>
+                            Мы используюем в своей работе новейшие технологии и современное оборудование. В связи с этим сокращается время производства
+                            надгробий, что позволяет выполнять больше заказов. Также, изделия могут иметь самую разную форму,
+                            которая дополняется декоративным оформлением.
+                        </p>
+                        <p>
+                            Наш магазин памятников предлагает клиентам более 1.500 моделей надгробий различной ценовой категории. Поэтому купить надгробие
+                            на могилу может человек с любым доходом. Кроме того, на протяжении года у нас действуют различные
+                            скидки и акции, проходят распродажи памятников, есть рассрочка на оплату. На изделия из натуральных
+                            пород предоставляем гарантию до 30 лет.
+                        </p>
+    
+                    </div>
+                    <!--introduction-->
+                    <div class="cemeteries">
+                        <h2>КЛАДБИЩА МОСКВЫ И МОСКОВСКОЙ ОБЛАСТИ</h2>
+                        <p class="bold text-center">
+                            <span>сортировать по: </span>
+                            <span class="sort-tab-active">наименованию </span>
+                            <span>(возр/убыв)</span>
+                        </p>
+                        <div class="row">
+                            <nav aria-label="Page navigation" class="cemeteries-pagination">
+                                <ul class="pagination tab-menu trigger-target">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="page-active">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>                                
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">все</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="hr-grey hr-grey--top"></div>
+                        <div class="row cemeteries-gallery">
+                            <div class="col-sm-6 col-md-4 cemeteries-card">
+                                <h5 class="cemeteries-card-title text-center">Алабушевское
+                                    <br> кладбище</h5>
+                                <div class="cemeteries-card-image cemeteries-card-image_1">
+                                </div>
+                                <div class="hidden-btn">
+                                    <a href="#" class="btn-details text-center">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 cemeteries-card">
+                                <h5 class="cemeteries-card-title text-center">Бусиновское
+                                    <br>кладбище</h5>
+                                <div class="cemeteries-card-image cemeteries-card-image_2">
+                                </div>
+                                <div class="hidden-btn">
+                                    <a href="#" class="btn-details text-center">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 cemeteries-card">
+                                <h5 class="cemeteries-card-title text-center">Ваганьковское
+                                    <br> кладбище</h5>
+                                <div class="cemeteries-card-image cemeteries-card-image_3">
+                                </div>
+                                <div class="hidden-btn">
+                                    <a href="#" class="btn-details text-center">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 cemeteries-card">
+                                <h5 class="cemeteries-card-title text-center">Ваганьковское
+                                    <br> кладбище</h5>
+                                <div class="cemeteries-card-image cemeteries-card-image_4">
+                                </div>
+                                <div class="hidden-btn">
+                                    <a href="#" class="btn-details text-center">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 cemeteries-card">
+                                <h5 class="cemeteries-card-title text-center">Калитниковское
+                                    <br> кладбище</h5>
+                                <div class="cemeteries-card-image cemeteries-card-image_5">
+                                </div>
+                                <div class="hidden-btn">
+                                    <a href="#" class="btn-details text-center">подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 cemeteries-card">
+                                <h5 class="cemeteries-card-title text-center">Черкизовское
+                                    <br>кладбище</h5>
+                                <div class="cemeteries-card-image cemeteries-card-image_6">
+                                </div>
+                                <div class="hidden-btn">
+                                    <a href="#" class="btn-details text-center">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--row -->
+                        <div class="hr-grey hr-grey--bottom"></div>
+    
+                        <div class="row row-pagination">
+                            <nav aria-label="Page navigation" class="cemeteries-pagination">
+                                <ul class="pagination tab-menu trigger-target">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="page-active">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">все</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <p class="bold text-center">
+                            <span>сортировать по: </span>
+                            <span class="sort-tab-active">наименованию </span>
+                            <span>(возр/убыв)</span>
+                        </p>
+                    </div>
+                    <!--cemeteries-->
+                </div>
+                <!--main-block-->
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
+        <div class="row-fluid">
+            <div class="hr-red"></div>
+        </div>
+        <div class="container">
+            <div class="row additional">
+                <div class="col-md-5">
+                    <p>
+                        Элитные надгробия представлены в нашей гранитной мастерской в большом ассортименте — различной формы, размера и сложности
+                        исполнения. Их создают из одного вида материала или с использованием сразу двух пород. Дорогие памятники
+                        на могилу отражают черты характера покойного, сферу деятельности и другие особенности. Вы можете заказать
+                        индивидуальный проект надгробия, которое изготовят наши мастера.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <div class="frame-decor"></div>
+                </div>
+                <div class="col-md-5">
+                    <p>
+                        Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях
+                        не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской
+                        Федерации. Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг,
+                        обращайтесь к менеджерам отдела продаж по телефону: <span class="bold">+7 495 799 50 06.</span> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="footer-menu-block">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Установка</a>
+                        </li>
+                        <li>
+                            <a href="#">Гарантии</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="footer-menu-block">
+                        <li>
+                            <a href="#">Памятники</a>
+                        </li>
+                        <li>
+                            <a href="#">Цоколя</a>
+                        </li>
+                        <li>
+                            <a href="#">Плитка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оградки</a>
+                        </li>
+                        <li>
+                            <a href="#">Столики</a>
+                        </li>
+                        <li>
+                            <a href="#">Лавочки</a>
+                        </li>
+                        <li>
+                            <a href="#">ВАЗЫ</a>
+                        </li>
+                        <li>
+                            <a href="#">Цветники</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="footer-menu-block">
+                        <li>
+                            <a href="#">КОРЗИНА</a>
+                        </li>
+                        <li>
+                            <a href="#">Панель управления</a>
+                        </li>
+                        <li>
+                            <a href="#">Личные данные</a>
+                        </li>
+                        <li>
+                            <a href="#">Адресная книга</a>
+                        </li>
+                        <li>
+                            <a href="#">История заказов</a>
+                        </li>
+                        <li>
+                            <a href="#">История посещений</a>
+                        </li>
+                        <li>
+                            <a href="#">Выйти из системы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="footer-menu-block">
+                        <li>
+                            <a href="#">Москва Долгопрудный</a>
+                        </li>
+                        <li>
+                            <a href="#">info@ogradki.ru</a>
+                        </li>
+                        <li>
+                            <a href="#">+ 7 495 799 50 06</a>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-center red copyright">© 2018. Разработка сайта xWork.site.</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
