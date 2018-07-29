@@ -3,6 +3,33 @@
     padding-bottom: 10px;
     background-color: $grey;
     background-image: url('../img/overlay.png');
+    .container:nth-child(1) {
+        .row {
+            margin-right: -15px;
+            .entry {
+                float: right;
+                margin-top: 12px;
+                @media screen and (max-width: 1000px) {
+                    margin-top: 12px;
+                }
+                a {
+                    font-size: 1.142em;
+                    text-transform: uppercase;
+                    padding: 15px 10px!important;
+                    &:hover {
+                        background: #fff;
+                        text-decoration: none;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-collapse {
+        @media screen and (max-width: 1000px) {
+            padding: 0;
+        }
+    }
     .burger-menu {
         z-index: 40;
         background: $red;
@@ -14,7 +41,7 @@
         left: 0;
     }
     .burger-menu--main {
-        margin-top: 16px;
+        margin-top: -3px;
         float: left;
     }
     .burger-menu--products {
@@ -31,50 +58,65 @@
     }
     .main-menu {
         margin-bottom: 80px;
-        li a {
-            color: $black;
-            font-size: 1.142em;
+        position: relative;
+        @media screen and (max-width: 1000px) {
+            .navbar-toggle {
+                display: block;
+            }
         }
-        li a.red {
-            color: $red;
-        }
-        li a:hover {
-            color: $black;
-        }
-        li>.active {
-            background: $white;
-            color: $red;
+        li {
+            a {
+                color: $black;
+                font-size: 1.142em;
+                &.red {
+                    color: $red;
+                }
+                &:hover {
+                    color: $black;
+                }
+            }
+            >.active {
+                background: $white;
+                color: $red;
+            }
         }
         #responsive-main-menu {
             position: absolute;
-            padding: 0 15px 0 0;
+            padding: 0;
             z-index: 10;
             overflow: hidden;
-            @media screen and (max-width: 767px) {
+            &.collapse {
+                @media (max-width: 1000px) {
+                    display: none !important;
+                }
+            }
+            @media screen and (max-width: 768px) {
                 width: 100%;
-                top: 60px;
+                top: 31px;
                 left: 15px;
+            }
+            @media screen and (min-width: 769px) and (max-width: 1000px) {
+                width: 100%;
+                top: 40px;
+                left: 0;
             }
             li {
                 line-height: 30px;
-                &.entry {
-                    @media screen and (max-width: 800px) {
-                        a {
-                            color: white;
-                        }
-                    }
-                }
                 a {
-                    @media screen and (max-width: 800px) {
+                    @media screen and (max-width: 1000px) {
                         padding: 10px;
                     }
                     &:hover {
                         color: $black;
                     }
                 }
-                @media screen and (max-width: 767px) {
-                    background: $red;
+                @media screen and (max-width: 1000px) {
+                    background: $red; // :not(.entry) {
+                    float: none; // }
                 }
+            }
+            a {
+                text-transform: uppercase;
             }
         }
     }
@@ -94,6 +136,12 @@
             float: none;
             ul {
                 width: 70%;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width: 724px) {
+            ul {
+                width: 100%;
                 margin: 0 auto;
             }
         }
@@ -130,7 +178,7 @@
     }
     .form-group {
         margin-top: 50px;
-        .wrapper {            
+        .wrapper {
             width: 239px;
             float: right;
             @media screen and (min-width: 725px) and (max-width: 992px) {
@@ -153,7 +201,7 @@
                 float: none;
                 margin: 0 auto;
                 .input-group {
-                   float: none;
+                    float: none;
                 }
             }
         }
@@ -166,6 +214,11 @@
         }
     }
     .products {
+        @media screen and (max-width: 1000px) {
+            .navbar-toggle {
+                display: block;
+            }
+        }
         li:hover {
             background: $red;
             @media screen and (max-width: 767px) {
@@ -184,18 +237,28 @@
         #responsive-products-menu {
             padding: 10px 15px 10px 0;
             overflow: hidden;
-            @media screen and (max-width: 767px) {
-                position: absolute;
+            &.collapse {
+                @media (max-width: 1000px) {
+                    display: none !important;
+                }
+            }
+            @media screen and (max-width: 1000px) {
                 width: 100%;
+                position: absolute;
                 z-index: 20;
                 top: 33px;
                 padding: 0;
                 left: 15px;
             }
+            @media screen and (min-width: 769px) and (max-width: 1000px) {
+                top: 36px;
+                left: 0;
+            }
             li {
                 line-height: 30px;
                 a {
-                    @media screen and (max-width: 992px) {
+                    text-transform: uppercase;
+                    @media screen and (max-width: 1000px) {
                         padding: 10px;
                         &:hover {
                             background: $white;
@@ -203,7 +266,7 @@
                         }
                     }
                 }
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 1000px) {
                     background: $red;
                 }
             }
@@ -217,7 +280,7 @@
                 background: $red;
                 width: 150%;
                 padding: 10px 0 10px 15px;
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 1000px) {
                     padding: 0;
                     width: 100%;
                     position: relative;
@@ -226,12 +289,11 @@
                     line-height: 30px;
                     a {
                         color: $white;
-                        @media screen and (max-width: 767px) {
+                        @media screen and (max-width: 1000px) {
                             padding: 10px 10px 10px 30px;
                         }
                         &:hover {
-                            color: $black;
-                            display: block;
+                            color: $black; // display: block;
                         }
                     }
                 }
