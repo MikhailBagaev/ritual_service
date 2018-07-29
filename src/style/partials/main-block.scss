@@ -1,11 +1,57 @@
 .main,
 .brief {
+    .breadcrumb {
+        @media screen and (max-width: 768px){
+            display: none;
+        }
+    }
+    .img-block {
+        .img-responsive {
+            @media screen and (min-width: 768px) {
+                max-width: 95%;
+            }
+        }
+    }
+    .preview-block {
+        @media screen and (max-width: 481px) {
+            display: none;
+        }
+        img {
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+                float: none;
+                display: inline-block;
+                margin-top: 20px;
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+            &:nth-child(1) {
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .total-sum {
+        .total-sum-table {
+            font-size: 2.428em;
+        }
+    }
     .hr-red {
         margin: 30px 0 30px;
     }
     .additional {
         p {
             line-height: 22px;
+            @media screen and (min-width: 992px) {
+                &.additional-left
+                 {
+                    padding-right: 10px;
+                }      
+                &.additional-right {
+                    padding-left: 10px;
+                }            
+            }
         }
     }
     .frame-decor {
@@ -14,11 +60,24 @@
     }
     .main-block {
         padding-left: 30px;
+        @media screen and (max-width: 992px) {
+            padding-left: 0;    
+        }
         h2 {
             font-size: 1.714em;
             @media screen and (max-width: 724px) {
                 font-size: 1.5em;
                 text-align: center;
+            }
+        }
+        h6 {
+            font-size: 1.428em;
+            line-height: 2.142em;
+            font-weight: 700;
+            text-transform: uppercase;
+            @media screen and (max-width: 480px) {
+                font-size: 1.142em;
+                line-height: 1.714em;
             }
         }
         .introduction {
@@ -28,17 +87,17 @@
                 line-height: 22px;
             }
         }
+        .hr-grey {
+            height: 1px;
+            background: $grey;
+            margin: 30px auto;
+        }
+        .hr-grey--bottom {
+            margin-bottom: 45px;
+        }
         .cemeteries {
             .row-pagination {
                 margin-bottom: 30px;
-            }
-            .hr-grey {
-                height: 1px;
-                background: $grey;
-                margin: 30px auto;
-            }
-            .hr-grey--bottom {
-                margin-bottom: 45px;
             }
             .cemeteries-card {
                 position: relative;
@@ -148,9 +207,108 @@
                 }
             }
         }
+        .conditions {
+            padding: 0 30px;
+            @media screen and (max-width: 990px) {
+                padding: 0;
+            }
+        }
+        .parameters {
+            padding-left: 30px;
+            @media screen and (max-width: 990px) {
+                padding: 0;
+            }
+            ul {
+                li {
+                    font-size: 1.142em;
+                    line-height: 2em;
+                    font-weight: 400;
+                    position: relative;
+                    padding-left: 16px;
+                    &::after {
+                        content: '';
+                        height: .3em;
+                        width: .3em;
+                        background: #D2153A;
+                        display: block;
+                        position: absolute;
+                        transform: rotate(45deg);
+                        top: 12px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .installation {
+            padding-left: 30px;
+            @media screen and (max-width: 990px) {
+                padding: 0;
+            }
+        }
+        .radio-group,
+        .checkbox-group {
+            label {
+                font-size: 1.142em;
+                line-height: 2em;
+                padding: 0;
+                font-weight: 400;
+            }
+        }
+        .radio-group {
+            label {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: baseline;
+                    margin-top: 2px;
+                    width: 12px;
+                    height: 12px;
+                    border: 2px solid $black;
+                    border-radius: 50%;
+                }
+            }
+            input[type="radio"] {
+                display: none;
+                &:checked+label {
+                    font-weight: 900;
+                    &::before {
+                        border: none;
+                        background: $red;
+                    }
+                }
+            }
+        }
+        .checkbox-group {
+            label {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: baseline;
+                    margin-top: 2px;
+                    width: 12px;
+                    height: 12px;
+                    border: 2px solid $black;
+                }
+            }
+            input[type="checkbox"] {
+                display: none;
+                &:checked+label {
+                    font-weight: 900;
+                    &::before {
+                        border: none;
+                        background: $red;
+                    }
+                }
+            }
+        }
     }
     .side-bar {
-        padding-left: 15px;
+        @media screen and (min-width: 992px){
+            padding-left: 15px;            
+        }
+        h3 {
+            padding: 0 22px 0 15px;
+        }
         .side-bar-block {
             background: linear-gradient(#fff, #eee);
             @media screen and (max-width: 724px) {
@@ -200,7 +358,6 @@
             padding-bottom: 1px;
             h3 {
                 overflow: hidden;
-                padding: 0 22px 0 15px;
                 span {
                     display: none;
                     float: right;
@@ -231,7 +388,6 @@
             padding-bottom: 1px;
             h3 {
                 overflow: hidden;
-                padding: 0 22px 0 15px;
                 span {
                     display: none;
                     float: right;
@@ -239,16 +395,6 @@
                     @media screen and (max-width: 724px) {
                         display: block;
                     }
-                }
-            }
-            .btn {
-                background: $red;
-                color: $white;
-                width: 95px;
-                display: block;
-                margin: 10px auto 20px;
-                .glyphicon {
-                    margin-right: 10px;
                 }
             }
             .registration {

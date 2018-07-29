@@ -161,3 +161,20 @@ ul {
         padding-bottom: 15px !important;
     }
 }
+
+.breadcrumb {
+    background-color: $white;
+    padding-left: 0;
+}
+
+.btn {
+    &.btn-new {
+        background: $red;
+        color: $white; 
+        display: block;
+        margin: 10px auto 20px;
+        .glyphicon {
+            margin-right: 10px;
+        }
+    }
+}
