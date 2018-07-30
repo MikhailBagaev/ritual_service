@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brief</title>
+    <title>Catalogue</title>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -154,92 +154,13 @@
         </div>
         <div class="hr-red"></div>
     </section>
-    <section class="brief">
+    <section class="catalogue">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 side-bar">
-                    <div class="basket side-bar-block">
-                        <h3>корзина
-                            <span class="glyphicon glyphicon-chevron-down" id="chevron-down-basket"></span>
-                        </h3>
-                        <div class="block-hidden basket-block-hidden">
-                            <p class="text-center">В корзине:
-                                <span class="items-number">2 товар(ов)</span>
-                            </p>
-                            <p class="text-center">На сумму:
-                                <span class="sum">42 000 руб</span>
-                            </p>
-                            <button class="order">
-                                <span class="glyphicon glyphicon-list-alt"></span> Оформить заказ</button>
-                        </div>
-                    </div>
-                    <!--basket-->
-                    <div class="news side-bar-block">
-                        <h3>новости</h3>
-                        <div class="news-block">
-                            <p class="date">01.07.2018</p>
-                            <h4>скоро открытие</h4>
-                            <p>Открытие нашего сайта состоится в ближайшее время...</p>
-                        </div>
-                        <div class="news-block">
-                            <p class="date">08.07.2018</p>
-                            <h4>акционное предложение</h4>
-                            <p>Первым десяти заказавшим — скидка на установку 30%...</p>
-                        </div>
-                    </div>
-                    <!--news-->
-                    <div class="autorization side-bar-block">
-                        <h3>авторизация
-                            <span class="glyphicon glyphicon-chevron-down" id="chevron-down-autorization"></span>
-                        </h3>
-                        <div class="block-hidden autorization-block-hidden">
-                            <form>
-                                <div class="input-group">
-                                    <span class="input-group-addon glyphicon glyphicon-user"></span>
-                                    <input type="text" class="form-control" placeholder="Логин">
-                                </div>
-                                <div class="input-group">
-                                    <span class="input-group-addon glyphicon glyphicon-lock"></span>
-                                    <input type="text" class="form-control" placeholder="Пароль">
-                                </div>
-                                <p class="registration text-center">
-                                    <a href="#" class="bold black">Забыли свой пароль?</a>
-                                    <br>
-                                    <a href="#" class="black">У вас нет аккаунта?</a>
-                                    <a href="#" class="bold black">Регистрация</a>
-                                </p>
-    
-                                <button type="submit" class="btn btn-new btn-default text-center">
-                                    <span class="glyphicon glyphicon-ok"></span>
-                                    <span>Войти</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <!--autorization-->
-                    <div class="statistics side-bar-block">
-                        <h3>статистика</h3>
-                        <p class="text-center">В магазине:
-                            <span class="visitors-number bold">10</span> посетитель(ей)</p>
-                        <p class="text-center">Просмотров за сегодня:
-                            <span class="views-today bold">200</span>
-                        </p>
-                        <p class="text-center">Посетителей за сегодня:
-                            <span class="visitors-today bold">200</span>
-                        </p>
-                        <p class="text-center">Всего просмотров:
-                            <span class="views-all bold">200</span>
-                        </p>
-                        <p class="text-center">Всего посетителей:
-                            <span class="visitors-all bold">200</span>
-                        </p>
-                    </div>
-                    <!--statistics-->
-                </div>
-                <div class="col-md-9 main-block">
+                <div class="main-block">
                     <div class="row">
                         <div class="introduction">
-                            <h2>Памятник на могилу (33-160)</h2>
+                            <h2>Элитные памятники из гранита</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="#">Главная</a>
@@ -247,10 +168,9 @@
                                 <li>
                                     <a href="#">Памятники </a>
                                 </li>
-                                <li>
-                                    <a href="">Элитные памятники из гранита</a>
+                                <li class="active">
+                                    Элитные памятники из гранита
                                 </li>
-                                <li class="active">Памятники на могилу (33-60)</li>
                             </ol>
                             <p>
                                 Элитные памятники на могилу — дорогие и нестандартные надгробия, привлекающие внимание своим великолепием и необычностью
@@ -259,20 +179,50 @@
     
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="img-block col-md-10 col-sm-9 col-xs-12">
-                            <img src="img/ivanov.jpg" alt="надгробие" class="img-responsive">
-                        </div>
-                        <div class="preview-block col-md-2 col-sm-3 col-xs-12">
-                            <img src="img/ivanov-small_1.jpg" alt="надгробие" class="img-responsive right">
-                            <img src="img/ivanov-small_2.jpg" alt="надгробие" class="img-responsive right">
-                        </div>
+    
+                    <p class="bold text-center">
+                        <span>сортировать по: </span>
+                        <span class="sort-tab-active">наименованию </span>
+                        <span>(возр/убыв)</span>
+                    </p>
+                    <div class="row row-pagination">
+                        <nav aria-label="Page navigation" class="cemeteries-pagination">
+                            <ul class="pagination tab-menu trigger-target">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="page-active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">все</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="hr-grey"></div>
-                    <form action="get">
-                        <div class="row">
-                            <div class="col-md-6 total-sum">
-                                <p class="total-sum-table bold text-center">24 800
+                    <div class="row cemeteries">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_1">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
                                     <span class="currency">руб.</span>
                                 </p>
                                 <button type="submit" class="btn btn-new btn-default text-center">
@@ -280,123 +230,155 @@
                                     <span>В корзину</span>
                                 </button>
                             </div>
-                            <div class="col-md-6 conditions">
-                                <p>
-                                    <span class="bold">Доставка:</span> самовывоз</p>
-                                <p>
-                                    <span class="bold">Гарантия:</span> обмен/возврат товара в течение 14 дней</p>
-                                <p>
-                                    <span class="bold">Оплата:</span> наличными, Visa/MasterCard, Кредит, Оплата частями, Мгновенная рассрочка,
-                                    Безналичными
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_2">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
                                 </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="hr-grey"></div>
-                        <div class="row">
-                            <div class="col-md-6 size">
-                                <h6>Выбор размера памятника</h6>
-                                <div class="radio-group">
-                                    <div class="radio-wrapper">
-                                        <input name="size" type="radio" value="xs" id="radio_1">
-                                        <label class="radio" for="radio_1"> 120 x 60 x 10 см.</label>
-                                    </div>
-                                    <div class="radio-wrapper">
-                                        <input name="size" type="radio" value="s" id="radio_2">
-                                        <label class="radio" for="radio_2"> 120 x 60 x 12 см.</label>
-                                    </div>
-                                    <div class="radio-wrapper">
-                                        <input name="size" type="radio" value="m" id="radio_3" checked>
-                                        <label class="radio" for="radio_3"> 120 x 60 x 15 см.</label>
-                                    </div>
-                                    <div class="radio-wrapper">
-                                        <input name="size" type="radio" value="xs" id="radio_4">
-                                        <label class="radio" for="radio_4"> 140 x 70 x 12 см.</label>
-                                    </div>
-                                    <div class="radio-wrapper">
-                                        <input name="size" type="radio" value="s" id="radio_5">
-                                        <label class="radio" for="radio_5"> 140 x 70 x 15 см.</label>
-                                    </div>
-                                    <div class="radio-wrapper">
-                                        <input name="size" type="radio" value="m" id="radio_6">
-                                        <label class="radio" for="radio_6"> 160 x 80 x 15 см.</label>
-                                    </div>
-                                </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_3">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
                             </div>
-                            <div class="col-md-6 col-md-push-18 installation">
-                                <h6>установка и доставка</h6>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="xs" id="checkbox_2-1" checked>
-                                        <label class="radio" for="checkbox_2-1"> Установка</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="s" id="checkbox_2-2" checked>
-                                        <label class="radio" for="checkbox_2-2"> Фундамент</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="m" id="checkbox_2-3">
-                                        <label class="radio" for="checkbox_2-3"> Доставка</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="xs" id="checkbox_2-4" checked>
-                                        <label class="radio" for="checkbox_2-4"> Самовывоз</label>
-                                    </div>
-                                </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
+                                </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
                             </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_4">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
+                                </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_5">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
+                                </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_6">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
+                                </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_7">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
+                                </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cemeteries-card">
+                            <h5 class="cemeteries-card-title text-center">Памятник на могилу
+                                <br> (33-146)</h5>
+                            <div class="cemeteries-card-image monument-card-image_8">
+                                <p class="add-info text-center">Размер от 100х50х8 см. Гранит. Полировка 5 сторон.</p>
+                            </div>
+                            <div class="hidden-btn">
+                                <p class="price text-center">42400
+                                    <span class="currency">руб.</span>
+                                </p>
+                                <button type="submit" class="btn btn-new btn-default text-center">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    <span>В корзину</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-grey"></div>
+                    <div class="row row-pagination">
+                        <nav aria-label="Page navigation" class="cemeteries-pagination">
+                            <ul class="pagination tab-menu trigger-target">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="page-active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">все</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <p class="bold text-center">
+                        <span>сортировать по: </span>
+                        <span class="sort-tab-active">наименованию </span>
+                        <span>(возр/убыв)</span>
+                    </p>
     
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 additional-items">
-                                <h6>дополнительно</h6>
-                                <div class="checkbox-group">
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="xs" id="checkbox_1-1" checked>
-                                        <label class="radio" for="checkbox_1-1"> Стела</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="s" id="checkbox_1-2" checked>
-                                        <label class="radio" for="checkbox_1-2"> Тумба</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="m" id="checkbox_1-3" checked>
-                                        <label class="radio" for="checkbox_1-3"> Цветник</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="xs" id="checkbox_1-4" checked>
-                                        <label class="radio" for="checkbox_1-4"> Эпитафия</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="s" id="checkbox_1-5">
-                                        <label class="radio" for="checkbox_1-5"> Крестик</label>
-                                    </div>
-                                    <div class="checkbox-wrapper">
-                                        <input name="size" type="checkbox" value="m" id="checkbox_1-6">
-                                        <label class="radio" for="checkbox_1-6"> Цветы</label>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-md-6 col-md-pull-18 parameters">
-                                <h6>параметры памятника</h6>
-                                <ul>
-                                    <li>Материал — Карельский гранит</li>
-                                    <li>Цвет материала — Черный</li>
-                                    <li>Качество гранита — Высший сорт
-                                    </li>
-                                    <li>Полировка — Все стороны
-                                    </li>
-                                    <li>Высота с тумбой — 135 см.
-                                    </li>
-                                    <li>Вес комплекта — 293 кг.
-                                    </li>
-                                    <li>Срок изготовления — 2 недели
-                                    </li>
-                                    <li>Гарантия — более 30 лет!
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
                 </div>
                 <!--main-block-->
             </div>

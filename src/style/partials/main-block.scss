@@ -1,5 +1,6 @@
 .main,
-.brief {
+.brief,
+.catalogue {
     .breadcrumb {
         @media screen and (max-width: 768px){
             display: none;
@@ -92,13 +93,26 @@
             background: $grey;
             margin: 30px auto;
         }
-        .hr-grey--bottom {
-            margin-bottom: 45px;
+        .price {
+            font-size: 1.714em;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+        .row-pagination {
+            margin: 30px 0;
+        }
+        .add-info {
+            font-size: 0.857em;
+            background: $red;
+            color: $white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            margin: 0;
+            padding: 15px 20px;
+            display: none;
         }
         .cemeteries {
-            .row-pagination {
-                margin-bottom: 30px;
-            }
             .cemeteries-card {
                 position: relative;
                 padding: 15px;
@@ -112,6 +126,9 @@
                     filter: grayscale(0);
                     transition: .7s;
                     &::before {
+                        display: block;
+                    }
+                    .add-info {
                         display: block;
                     }
                 }
@@ -167,6 +184,30 @@
             }
             .cemeteries-card-image_6 {
                 background-image: url('../img/picture_5.jpg');
+            }
+            .monument-card-image_1 {
+                background-image: url('../img/monument_1.jpg');
+            }
+            .monument-card-image_2 {
+                background-image: url('../img/monument_2.jpg');
+            }
+            .monument-card-image_3 {
+                background-image: url('../img/monument_3.jpg');
+            }
+            .monument-card-image_4 {
+                background-image: url('../img/monument_4.jpg');
+            }
+            .monument-card-image_5 {
+                background-image: url('../img/monument_5.jpg');
+            }
+            .monument-card-image_6 {
+                background-image: url('../img/monument_6.jpg');
+            }
+            .monument-card-image_7 {
+                background-image: url('../img/monument_1.jpg');
+            }
+            .monument-card-image_8 {
+                background-image: url('../img/monument_2.jpg');
             }
             .hidden-btn {
                 opacity: 0;
